@@ -5,6 +5,9 @@ package com.hspedu.enum_;
  * @version 1.0
  */
 public class Enumeration03 {
+    public static void main(String[] args) {
+        System.out.println(Seasons.SPRING);
+    }
 }
 
 //演示使用enum关键字来实现枚举类
@@ -18,5 +21,13 @@ enum Seasons {
     Seasons(String name, String desc) {
         this.name = name;
         this.desc = desc;
+    }
+
+    @Override
+    public String toString() {
+        return "Seasons{" +
+                "name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                '}';
     }
 }
